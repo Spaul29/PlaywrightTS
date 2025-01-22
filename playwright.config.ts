@@ -2,7 +2,7 @@ import { defineConfig, devices } from "@playwright/test";
 import { config } from "dotenv";
 
 if (process.env.ENVIRONMENT) {
-  console.log("ENVIRONMENT: ", process.env.ENVIRONMENT);
+  console.log(`ENVIRONMENT: ${process.env.ENVIRONMENT}`);
   config({
     path: `.env.${process.env.ENVIRONMENT}`,
     override: true,
@@ -31,6 +31,11 @@ export default defineConfig({
     {
       name: "webkit",
       use: { ...devices["Desktop Safari"] },
+      testDir: "./e2e/tests/ui",
+    },
+    {
+      name: "firefox",
+      use: { ...devices["Desktop Firefox"] },
       testDir: "./e2e/tests/ui",
     },
     {
