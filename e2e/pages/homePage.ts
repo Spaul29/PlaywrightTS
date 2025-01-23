@@ -1,6 +1,6 @@
-import { Page } from "@playwright/test";
-import LeftMenuComponent from "./components/leftMenuComponent";
-import TopMenuComponent from "./components/topMenuComponent";
+import { Page } from '@playwright/test';
+import LeftMenuComponent from './components/leftMenuComponent';
+import TopMenuComponent from './components/topMenuComponent';
 
 class HomePage {
   //left menu component and top menu component

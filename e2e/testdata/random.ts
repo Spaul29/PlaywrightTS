@@ -1,5 +1,5 @@
-import { EmployeeDetails } from "./orangeHrmInterfaces";
-import { faker } from "@faker-js/faker";
+import { EmployeeDetails } from './orangeHrmInterfaces';
+import { faker } from '@faker-js/faker';
 
 export function getRandomEmployeeDetails(): EmployeeDetails {
   return {

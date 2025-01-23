@@ -1,14 +1,14 @@
-import { Page } from "@playwright/test";
-import HomePage from "./homePage";
-import { Env } from "@e2e/frameworkConfig/env";
+import { Page } from '@playwright/test';
+import HomePage from './homePage';
+import { Env } from '@e2e/frameworkConfig/env';
 
 class LoginPage {
   constructor(private readonly page: Page) {}
 
-  private readonly userNameTextBox = this.page.getByPlaceholder("Username");
-  private readonly passwordTextBox = this.page.getByPlaceholder("Password");
-  private readonly loginButton = this.page.getByRole("button", {
-    name: "Login",
+  private readonly userNameTextBox = this.page.getByPlaceholder('Username');
+  private readonly passwordTextBox = this.page.getByPlaceholder('Password');
+  private readonly loginButton = this.page.getByRole('button', {
+    name: 'Login',
   });
 
   async visit() {
